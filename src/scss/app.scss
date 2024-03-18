@@ -188,23 +188,69 @@ a {
   }
 
   &.outline {
-    border: 1px solid $primary-color;
-    color: $primary-color;
     box-shadow: none;
 
-    &:hover,
-    &:focus {
-      background-color: $text-hover-color;
+    &.default,
+    &.primary {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+
+      &:hover,
+      &:focus {
+        background-color: $primary-hover-color;
+      }
+    }
+
+    &.secondary {
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+
+      &:hover,
+      &:focus {
+        background-color: $secondary-hover-color;
+      }
+    }
+
+    &.danger {
+      border: 1px solid $danger-color;
+      color: $danger-color;
+
+      &:hover,
+      &:focus {
+        background-color: $danger-hover-color;
+      }
     }
   }
 
   &.text {
-    color: $primary-color;
     box-shadow: none;
 
-    &:hover,
-    &:focus {
-      background-color: $text-hover-color;
+    &.default,
+    &.primary {
+      color: $primary-color;
+
+      &:hover,
+      &:focus {
+        background-color: $primary-hover-color;
+      }
+    }
+
+    &.secondary {
+      color: $secondary-color;
+
+      &:hover,
+      &:focus {
+        background-color: $secondary-hover-color;
+      }
+    }
+
+    &.danger {
+      color: $danger-color;
+
+      &:hover,
+      &:focus {
+        background-color: $danger-hover-color;
+      }
     }
 
     &.disabled {
