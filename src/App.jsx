@@ -11,8 +11,8 @@ function App() {
 
         <div className="main__content">
           <div className="main__content__row">
+            {/*button*/}
             <div className="main__content__row__item">
-              {/*button*/}
               <p className="main__content__row__item__content">
                 {"<Button />"}
               </p>
@@ -176,8 +176,8 @@ function App() {
             </div>
           </div>
 
+          {/*&:hover, &:focus*/}
           <div className="main__content__row">
-            {/*&:hover, &:focus*/}
             <div className="main__content__row__item">
               <p className="main__content__row__item__content">
                 {"&:hover, &:focus"}
