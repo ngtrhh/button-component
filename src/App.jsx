@@ -1,36 +1,11 @@
 import Button from "./components/Button";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div>
-      <div className="sidebar">
-        <div className="sidebar__logo">
-          <span>Dev</span>challenges.io
-        </div>
-        <div className="sidebar__menu">
-          <ul>
-            <li>
-              <a>Color</a>
-            </li>
-            <li>
-              <a>Typography</a>
-            </li>
-            <li>
-              <a>Spaces</a>
-            </li>
-            <li>
-              <a className="active">Buttons</a>
-            </li>
-            <li>
-              <a>Inputs</a>
-            </li>
-            <li>
-              <a>Grid</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Sidebar />
       <div className="main">
         <div className="main__title">Buttons</div>
 
