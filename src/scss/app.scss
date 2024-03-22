@@ -1,4 +1,4 @@
-@use "./abstract/" as *;
+@use "./variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@500;700&family=Poppins:wght@600&family=Ubuntu+Mono&display=swap");
 
 * {
@@ -10,7 +10,6 @@
 
 body {
   position: relative;
-  padding-bottom: 24px;
 }
 
 ul,
@@ -64,33 +63,32 @@ a {
 }
 
 .main {
-  padding-top: 60px;
-  padding-left: ($sidebar-width + 80px);
+  padding: 60px ($sidebar-width + 80px) 24px;
   display: flex;
   flex-direction: column;
 
-  &__title {
+  .title {
     color: #4f4f4f;
     font-family: Poppins;
     font-size: 24px;
     margin-bottom: 28px;
   }
 
-  &__content {
+  .content {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     gap: 45px;
 
-    &__row {
+    .row {
       display: flex;
       flex-direction: row;
       align-items: end;
       justify-content: start;
       gap: 100px;
 
-      &__item {
+      .item {
         display: flex;
         align-items: start;
         justify-content: start;
@@ -98,7 +96,7 @@ a {
         gap: 12px;
         min-width: 180px;
 
-        &__content {
+        p {
           color: #333333;
           font-family: Ubuntu Mono;
           font-size: 12px;
@@ -141,9 +139,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  text-align: center;
 
-  &__text {
+  .text {
     font-family: Noto Sans JP;
     font-size: 14px;
     font-weight: 500;
@@ -271,6 +268,10 @@ a {
   &.lg {
     padding: 11px 22px;
   }
+}
+
+.disableShadow {
+  box-shadow: none;
 }
 
 .disableShadow {

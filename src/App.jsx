@@ -1,5 +1,4 @@
 import Button from "./components/Button";
-import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -7,196 +6,125 @@ function App() {
     <div>
       <Sidebar />
       <div className="main">
-        <div className="main__title">Buttons</div>
+        <div className="title">Buttons</div>
 
-        <div className="main__content">
-          <div className="main__content__row">
+        <div className="content">
+          <div className="row">
             {/*button*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button />"}
-              </p>
-              <Button />
-            </div>
-
-            {/*button &:hover, &:focus*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                &:hover, &:focus
-              </p>
+            <div className="item">
+              <p>{"<Button />"}</p>
               <Button />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*outline*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button variant=”outline” />"}
-              </p>
-              <Button variant="outline" />
-            </div>
-
-            {/*outline &:hover, &:focus*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                &:hover, &:focus
-              </p>
+            <div className="item">
+              <p>{"<Button variant=”outline” />"}</p>
               <Button variant="outline" />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*text*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button variant=”text” />"}
-              </p>
-              <Button variant="text" />
-            </div>
-
-            {/*text &:hover, &:focus*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button variant=”text” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button variant=”text” />"}</p>
               <Button variant="text" />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*disableShadow*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button disableShadow />"}
-              </p>
+            <div className="item">
+              <p>{"<Button disableShadow />"}</p>
               <Button disableShadow />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*disabled*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button disabled />"}
-              </p>
+            <div className="item">
+              <p>{"<Button disabled />"}</p>
               <Button disabled />
             </div>
 
             {/*text disabled*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button variant=”text” disabled />"}
-              </p>
+            <div className="item">
+              <p>{"<Button variant=”text” disabled />"}</p>
               <Button variant="text" disabled />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*startIcon*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button startIcon=”local_grocery_store” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button startIcon=”local_grocery_store” />"}</p>
               <Button
                 color="primary"
-                startIcon={() => <MdOutlineLocalGroceryStore size={20} />}
+                startIcon={() => (
+                  <span class="material-symbols-outlined">
+                    local_grocery_store
+                  </span>
+                )}
               />
             </div>
 
             {/*endIcon*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button endIcon=”local_grocery_store” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button endIcon=”local_grocery_store” />"}</p>
               <Button
                 color="primary"
-                endIcon={() => <MdOutlineLocalGroceryStore size={20} />}
+                endIcon={() => (
+                  <span class="material-symbols-outlined">
+                    local_grocery_store
+                  </span>
+                )}
               />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*size="sm"*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button size=”sm” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button size=”sm” />"}</p>
               <Button color="primary" size="sm" />
             </div>
 
             {/*size="md*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button size=md />"}
-              </p>
+            <div className="item">
+              <p>{"<Button size=md />"}</p>
               <Button color="primary" />
             </div>
 
             {/*size="lg*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button size=”lg” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button size=”lg” />"}</p>
               <Button color="primary" size="lg" />
             </div>
           </div>
 
-          <div className="main__content__row">
+          <div className="row">
             {/*color=”default”*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button color=”default” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button color=”default” />"}</p>
               <Button />
             </div>
 
             {/*color=”primary”*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button color=”primary” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button color=”primary” />"}</p>
               <Button color="primary" />
             </div>
 
             {/*color=”secondary”*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button color=”secondary” />"}
-              </p>
+            <div className="item">
+              <p>{"<Button color=”secondary” />"}</p>
               <Button color="secondary" />
             </div>
 
             {/*color=”danger”*/}
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"<Button color=”danger” />"}
-              </p>
-              <Button color="danger" />
-            </div>
-          </div>
-
-          {/*&:hover, &:focus*/}
-          <div className="main__content__row">
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content">
-                {"&:hover, &:focus"}
-              </p>
-              <Button />
-            </div>
-
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content"></p>
-              <Button color="primary" />
-            </div>
-
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content"></p>
-              <Button color="secondary" />
-            </div>
-
-            <div className="main__content__row__item">
-              <p className="main__content__row__item__content"></p>
+            <div className="item">
+              <p>{"<Button color=”danger” />"}</p>
               <Button color="danger" />
             </div>
           </div>
