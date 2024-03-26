@@ -61,11 +61,11 @@ function App() {
               <Button
                 color="primary"
                 children={"Default"}
-                startIcon={() => (
+                startIcon={
                   <span class="material-symbols-outlined">
                     local_grocery_store
                   </span>
-                )}
+                }
               />
             </div>
 
@@ -75,11 +75,11 @@ function App() {
               <Button
                 color="primary"
                 children={"Default"}
-                endIcon={() => (
+                endIcon={
                   <span class="material-symbols-outlined">
                     local_grocery_store
                   </span>
-                )}
+                }
               />
             </div>
           </div>

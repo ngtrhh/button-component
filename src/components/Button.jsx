@@ -11,9 +11,6 @@ const Button = ({
   onClick,
   ...props
 }) => {
-  const StartIcon = startIcon;
-  const EndIcon = endIcon;
-
   return (
     <button
       {...props}
@@ -22,9 +19,9 @@ const Button = ({
       } ${size}`}
       onClick={onClick}
     >
-      {startIcon && <StartIcon />}
-      <span>{children}</span>
-      {endIcon && <EndIcon />}
+      {startIcon}
+      {children}
+      {endIcon}
     </button>
   );
 };
