@@ -7,13 +7,12 @@ function App() {
       <Sidebar />
       <div className="main">
         <div className="title">Buttons</div>
-
         <div className="content">
           <div className="row">
             {/*button*/}
             <div className="item">
               <p>{"<Button />"}</p>
-              <Button />
+              <Button children={"Default"} />
             </div>
           </div>
 
@@ -21,7 +20,7 @@ function App() {
             {/*outline*/}
             <div className="item">
               <p>{"<Button variant=”outline” />"}</p>
-              <Button variant="outline" />
+              <Button variant="outline" children={"Default"} />
             </div>
           </div>
 
@@ -29,7 +28,7 @@ function App() {
             {/*text*/}
             <div className="item">
               <p>{"<Button variant=”text” />"}</p>
-              <Button variant="text" />
+              <Button variant="text" children={"Default"} />
             </div>
           </div>
 
@@ -37,7 +36,7 @@ function App() {
             {/*disableShadow*/}
             <div className="item">
               <p>{"<Button disableShadow />"}</p>
-              <Button disableShadow />
+              <Button disableShadow children={"Default"} />
             </div>
           </div>
 
@@ -45,13 +44,13 @@ function App() {
             {/*disabled*/}
             <div className="item">
               <p>{"<Button disabled />"}</p>
-              <Button disabled />
+              <Button disabled children={"Default"} />
             </div>
 
             {/*text disabled*/}
             <div className="item">
               <p>{"<Button variant=”text” disabled />"}</p>
-              <Button variant="text" disabled />
+              <Button variant="text" disabled children={"Default"} />
             </div>
           </div>
 
@@ -61,6 +60,7 @@ function App() {
               <p>{"<Button startIcon=”local_grocery_store” />"}</p>
               <Button
                 color="primary"
+                children={"Default"}
                 startIcon={() => (
                   <span class="material-symbols-outlined">
                     local_grocery_store
@@ -74,6 +74,7 @@ function App() {
               <p>{"<Button endIcon=”local_grocery_store” />"}</p>
               <Button
                 color="primary"
+                children={"Default"}
                 endIcon={() => (
                   <span class="material-symbols-outlined">
                     local_grocery_store
@@ -87,19 +88,19 @@ function App() {
             {/*size="sm"*/}
             <div className="item">
               <p>{"<Button size=”sm” />"}</p>
-              <Button color="primary" size="sm" />
+              <Button color="primary" size="sm" children={"Default"} />
             </div>
 
             {/*size="md*/}
             <div className="item">
               <p>{"<Button size=md />"}</p>
-              <Button color="primary" />
+              <Button color="primary" children={"Default"} />
             </div>
 
             {/*size="lg*/}
             <div className="item">
               <p>{"<Button size=”lg” />"}</p>
-              <Button color="primary" size="lg" />
+              <Button color="primary" size="lg" children={"Default"} />
             </div>
           </div>
 
@@ -107,25 +108,25 @@ function App() {
             {/*color=”default”*/}
             <div className="item">
               <p>{"<Button color=”default” />"}</p>
-              <Button />
+              <Button children={"Default"} />
             </div>
 
             {/*color=”primary”*/}
             <div className="item">
               <p>{"<Button color=”primary” />"}</p>
-              <Button color="primary" />
+              <Button color="primary" children={"Default"} />
             </div>
 
             {/*color=”secondary”*/}
             <div className="item">
               <p>{"<Button color=”secondary” />"}</p>
-              <Button color="secondary" />
+              <Button color="secondary" children={"Default"} />
             </div>
 
             {/*color=”danger”*/}
             <div className="item">
               <p>{"<Button color=”danger” />"}</p>
-              <Button color="danger" />
+              <Button color="danger" children={"Default"} />
             </div>
           </div>
         </div>

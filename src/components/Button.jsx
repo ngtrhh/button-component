@@ -1,27 +1,28 @@
 import PropTypes from "prop-types";
 
-const Button = (props) => {
-  const StartIcon = props.startIcon;
-  const EndIcon = props.endIcon;
-
-  const text = props.text ? props.text : "Default";
-  const color = props.color ? props.color : "primary";
-  const variant = props.variant ? props.variant : "fill";
-  const disabled = props.disabled ? "disabled" : "";
-  const disableShadow = props.disableShadow ? "disableShadow" : "";
-  const size = props.size ? props.size : "md";
+const Button = ({
+  children,
+  color = "default",
+  variant = "fill",
+  size = "md",
+  startIcon,
+  endIcon,
+  onClick,
+  ...props
+}) => {
+  const StartIcon = startIcon;
+  const EndIcon = endIcon;
 
   return (
-    <div
-      className={`button ${color} ${variant} ${disableShadow} ${disabled} ${
-        size && size
-      }`}
-      onClick={props.onClick}
+    <button
+      {...props}
+      className={`btn-component ${color} ${variant} ${size}`}
+      onClick={() => console.log("click")}
     >
-      {props.startIcon && <StartIcon />}
-      <span className="text">{text}</span>
-      {props.endIcon && <EndIcon />}
-    </div>
+      {startIcon && <StartIcon />}
+      <span>{children}</span>
+      {endIcon && <EndIcon />}
+    </button>
   );
 };
 
