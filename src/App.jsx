@@ -12,7 +12,7 @@ function App() {
             {/*button*/}
             <div className="item">
               <p>{"<Button />"}</p>
-              <Button children={"Default"} />
+              <Button>Default</Button>
             </div>
           </div>
 

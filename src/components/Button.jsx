@@ -7,6 +7,7 @@ const Button = ({
   size = "md",
   startIcon,
   endIcon,
+  disableShadow = false,
   onClick,
   ...props
 }) => {
@@ -16,8 +17,10 @@ const Button = ({
   return (
     <button
       {...props}
-      className={`btn-component ${color} ${variant} ${size}`}
-      onClick={() => console.log("click")}
+      className={`btn-component ${color} ${variant}${
+        disableShadow ? " disableShadow" : ""
+      } ${size}`}
+      onClick={onClick}
     >
       {startIcon && <StartIcon />}
       <span>{children}</span>
