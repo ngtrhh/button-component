@@ -1,7 +1,10 @@
 import Button from "./components/Button";
 import Sidebar from "./components/Sidebar";
+import Input from "./components/Input";
+import { useState } from "react";
 
 function App() {
+  const [buttonText, setButtonText] = useState("Default");
   return (
     <div>
       <Sidebar />
@@ -12,7 +15,20 @@ function App() {
             {/*button*/}
             <div className="item">
               <p>{"<Button />"}</p>
-              <Button>Default</Button>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: 20,
+                  alignItems: "center",
+                }}
+              >
+                <Input
+                  label="Button text"
+                  onChange={(e) => setButtonText(e.target.value)}
+                />
+                <Button>{buttonText}</Button>
+              </div>
             </div>
           </div>
 
